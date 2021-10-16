@@ -1,0 +1,7 @@
+version: '3.7'
+
+services:
+  webapp:
+    image: 89.208.222.153:8123/webapp
+    ports:
+      - "80:8080"
