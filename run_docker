@@ -1,0 +1,8 @@
+docker run -it -v /var/run/docker.sock:/var/run/docker.sock 89.208.222.153:8123/build /bin/bash
+
+git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git /home/app
+
+mvn package -f /home/app
+
+docker build . --tag="89.208.222.153:8123/build"
+docker build /home --tag="89.208.222.153:8123/webapp"
