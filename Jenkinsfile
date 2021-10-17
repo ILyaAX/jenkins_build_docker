@@ -28,6 +28,8 @@ pipeline {
 				}
 			}
 		}
+	}
+	agent {
 		any {
 			stages {
 				stage ('ssh connect & docker run') {
